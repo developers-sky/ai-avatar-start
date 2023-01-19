@@ -40,7 +40,7 @@ const Home = () => {
     
       setRetry(0);
     }
-  
+    const finalInput = input.replace(/cortel/gi, 'cortel');
     // Add the fetch request
     const response = await fetch('/api/generate', {
       method: 'POST',
@@ -97,7 +97,7 @@ const sleep = (ms) => {
 
     runRetry();
   }, [retry]);
-
+ console.log(img)
   return (
     <div className="root">
       <Head>
@@ -136,6 +136,7 @@ const sleep = (ms) => {
     {img && (
       <div className="output-content">
         <Image src={img} width={512} height={512} alt={input} />
+        <p>{finalPrompt}</p>
       </div>
     )}
   </div>
