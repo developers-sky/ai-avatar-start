@@ -106,10 +106,10 @@ const sleep = (ms) => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Christians Avatar Generator</h1>
+            <h1>Anurag's Avatar Generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Turn me into anyone you want! Make sure you refer to me as "cortel" in the prompt</h2>
+            <h2>Turn me into anyone you want! Make sure you refer to me as "Anurag" in the prompt</h2>
           </div>
           <div className="prompt-container">
             <input className="prompt-box" value={input} onChange={onChange}/>
@@ -142,13 +142,12 @@ const sleep = (ms) => {
   </div>
   <div className="badge-container grow">
           <a
-            href="https://christianortel.xyz"
-            target="_blank"
+            href="anuragks.me"
             rel="noreferrer"
           >
             <div className="badge">
               <Image src={buildspaceLogo} alt="buildspace logo" />
-              <p>build by Christian Ortel</p>
+              <p>build by Anurag</p>
             </div>
           </a>
         </div>
